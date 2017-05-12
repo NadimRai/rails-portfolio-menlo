@@ -2,7 +2,7 @@
       <div class="row home-page">
         <div class="col-sm-8">
           <div class="blog-post-home">
-            <%= image_tag 'computer.jpeg', width: "680", height:"620" %>
+            <%= image_tag 'computer.jpeg', width: "650", height:"620" %>
           </div><!-- /.blog-post --> 
         </div><!-- /.blog-main -->
         <div class="col-sm-3 offset-sm-1">
@@ -11,7 +11,7 @@
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.Aenean lacinia bibendum nulla.</p>
           </div>
           <div class="sidebar-module-home">
-            <h4>Blogs</h4>
+            <h4><%= link_to 'Blogs', blogs_path %></h4>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet.</p>
           </div>
 
@@ -23,7 +23,8 @@
           <div class="sidebar-module-home">
             <h4>Elsewhere</h4>
             <ol class="list-unstyled">
-              <li><a href="https://github.com/NadimRai" target="_blank">GitHub</a></li>   
+              <li><%= icon('github') %><a href="https://github.com/NadimRai" target="_blank"><span class="fa-custom">
+                GitHub</span></a></li>   
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
